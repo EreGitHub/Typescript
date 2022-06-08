@@ -3,8 +3,7 @@
 	let flash: {
 		name: string;
 		age?: number;
-		powers: string[];
-		// getName?: Function;
+		powers: number[];
 		getName?: () => string;
 	} = {
 		name: "ruben",
@@ -12,13 +11,15 @@
 		powers: ["speed", "fly", "xray"],
 	};
 
-	flash = {
-		name: "otro nombre",
-		// age: 50,
-		powers: ["speed", "fly", "xray"],
-		getName(): string {
-			return this.name;
-		},
+	let superman: {
+		name: string;
+		age?: number;
+		powers: string[];
+		getName?: () => string;
+	} = {
+		name: "ruben2",
+		age: 20,
+		powers: ["speed", "xray"],
 	};
 
 	console.log(flash);
