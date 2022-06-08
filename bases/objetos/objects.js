@@ -1,6 +1,5 @@
 "use strict";
 (function () {
-    // let flash: Object = {
     var flash = {
         name: "ruben",
         age: 24,
@@ -13,3 +12,4 @@
     };
     console.log(flash);
 })();
+//# sourceMappingURL=objects.js.map

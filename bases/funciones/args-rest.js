@@ -7,7 +7,7 @@
         }
         return "".concat(firstName, " ").concat(args.join(" "));
     };
-    // const superman = fullName("ruben", "rios", "ortega", "sin barrio");
     var superman = fullName("ruben", "rios");
     console.log({ superman: superman });
 })();
+//# sourceMappingURL=args-rest.js.map

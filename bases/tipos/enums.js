@@ -7,8 +7,7 @@
         AudioLevel[AudioLevel["max"] = 10] = "max";
     })(AudioLevel || (AudioLevel = {}));
     var currentAudio = AudioLevel.max;
-    // let currentAudio = 10;
-    // let currentAudio = "10";
     console.log(currentAudio);
     console.log(AudioLevel);
 })();
+//# sourceMappingURL=enums.js.map

@@ -1,5 +1,4 @@
 "use strict";
-// Objetos
 var batimovil = {
     carroceria: "Negra",
     modelo: "6x6",
@@ -12,11 +11,9 @@ var bumblebee = {
     antibalas: true,
     pasajeros: 4,
     disparar: function () {
-        // El metodo disparar es opcional
         console.log("Disparando");
     },
 };
-// Villanos debe de ser un arreglo de objetos personalizados
 var villanos = [
     {
         nombre: "Lex Luthor",
@@ -42,7 +39,7 @@ var apocalipsis = {
     lider: true,
     miembros: ["Magneto", "Tormenta", "Psylocke", "Angel"],
 };
-// Mystique, debe poder ser cualquiera de esos dos mutantes (charles o apocalipsis)
 var mystique;
 mystique = charles;
 mystique = apocalipsis;
+//# sourceMappingURL=app%20tarea%203.js.map

@@ -8,6 +8,6 @@
             return "".concat(firstName, " ").concat(LastName || "(no last name)");
     };
     var name = fullName("Tony", "Star", true);
-    // const name = fullName("Tony", "Star");
     console.log({ name: name });
 })();
+//# sourceMappingURL=args-default.js.map

@@ -8,8 +8,7 @@
     else {
         console.log("nos salvamos");
     }
-    // avengers = 123;
-    // avengers = Number("55");
-    avengers = Number("55A"); //NOTE NaN es considerado como numero en js
+    avengers = Number("55A");
     console.log({ avengers: avengers });
 })();
+//# sourceMappingURL=numbers.js.map
