@@ -1,18 +1,18 @@
 (() => {
-	let flash = {
+	// let flash: Object = {
+	let flash: { name: string; age?: number; powers: string[] } = {
 		name: "ruben",
 		age: 24,
 		powers: ["speed", "fly", "xray"],
 	};
 
-	// flash = { name2: "otro nombre" }; //NOTE error, crear un nuevo tipo
 	flash = {
 		name: "otro nombre",
-		age: 50,
+		// age: 50,
 		powers: ["speed", "fly", "xray"],
-		getNombre() {
-			return this.name;
-		},
+		// getNombre() {
+		// 	return this.name;
+		// },
 	};
 
 	console.log(flash);
