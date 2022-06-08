@@ -23,6 +23,9 @@ var __rest = (this && this.__rest) || function (s, e) {
         console.log(iroman, arg);
     };
     print(avenger);
+    const avengersArr = ["capitan america", "ironman", "hulk", "thor"];
+    const [, , , p4] = avengersArr;
+    console.log(p4);
 })();
 (() => {
     let a = "ruben";

@@ -21,4 +21,9 @@
 		console.log(iroman, arg);
 	};
 	print(avenger);
+
+	const avengersArr: string[] = ["capitan america", "ironman", "hulk", "thor"];
+	// const iroman = avengersArr[1];
+	const [, , , p4] = avengersArr;
+	console.log(p4);
 })();
