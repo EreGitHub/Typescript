@@ -10,9 +10,9 @@
         name: "otro nombre",
         // age: 50,
         powers: ["speed", "fly", "xray"],
-        // getNombre() {
-        // 	return this.name;
-        // },
+        getName: function () {
+            return this.name;
+        },
     };
     console.log(flash);
 })();
