@@ -1,7 +1,7 @@
 "use strict";
-(() => {
-    let avengers = 10;
-    const villanos = 20;
+(function () {
+    var avengers = 10;
+    var villanos = 20;
     if (avengers < villanos) {
         console.log("Estamos en problemas");
     }
@@ -11,5 +11,5 @@
     // avengers = 123;
     // avengers = Number("55");
     avengers = Number("55A"); //NOTE NaN es considerado como numero en js
-    console.log({ avengers });
+    console.log({ avengers: avengers });
 })();
