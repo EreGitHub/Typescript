@@ -1,5 +1,8 @@
-import { Hero, Hero2, Hero3, Hero4 } from "./clases/Hero";
+import { genericFn, printObjet } from "./generics/generics";
 
-const iroman = new Hero("Iroman", 1, 30);
-console.log(iroman);
-console.log(iroman.power);
+printObjet(123);
+printObjet(new Date());
+
+console.log(genericFn(123));
+console.log(genericFn("hola mundo").toFixed(2)); //NOTE error: Type '"hola mundo"' is not assignable to type 'number'.
+console.log(genericFn(new Date()).toFixed(2)); //NOTE error: Type 'Date' is not assignable to type 'number'.
