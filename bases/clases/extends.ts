@@ -17,12 +17,19 @@
 		getFullNameDesdeXmen(): string {
 			return this.getFullName();
 		}
+
+		get FullName() {
+			return `${this.name} - ${this.realName}`;
+		}
+
+		set FullName(name: string) {
+			if (name.length < 3) throw new Error("El nombre es muy corto");
+			this.name = name;
+		}
 	}
 
 	const wolverine = new Xmen("Wolverine", "Logan", true);
-	console.log(wolverine);
-	console.log(wolverine.getFullNameDesdeXmen());
-
-	const nuevoAvenger = new Avenger("Ironman", "Tony Stark");
-	// nuevoAvenger.getFullName(); //NOTE no accesibles por que es protected
+	console.log(wolverine.FullName);
+	wolverine.FullName = "Logan";
+	console.log(wolverine.FullName);
 })();
