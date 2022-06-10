@@ -1,13 +1,5 @@
-// import { Hero as SuperHero, Hero2, Hero3, Hero4 } from "./clases/Hero";
-// const Hero = 123;
-// const iroman = new SuperHero("Iroman", 100, 30);
-// console.log(iroman);
+import { Hero, Hero2, Hero3, Hero4 } from "./clases/Hero";
 
-import * as Clases from "./clases/Hero";
-import powersDefaul, { Powers } from "./data/powers";
-
-const Hero = 123;
-const iroman = new Clases.Hero("Iroman", 100, 30);
+const iroman = new Hero("Iroman", 1, 30);
 console.log(iroman);
-
-console.log(powersDefaul);
+console.log(iroman.power);
