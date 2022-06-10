@@ -8,6 +8,11 @@
 	};
 	b.a = 10;
 
+	const d: number = 10;
+	if (d > 0) {
+		const d: number = 10;
+	}
+
 	const getName = (): void => {};
 	// getName = () => {};
 })();
