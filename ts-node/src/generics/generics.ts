@@ -2,6 +2,8 @@ export const printObjet = (arg: any) => {
 	console.log(arg);
 };
 
-export function genericFn(arg: any) {
+export function genericFn<T>(arg: T): T {
 	return arg;
 }
+
+export const genericFnArrow = <T>(arg: T): T => arg;

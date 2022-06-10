@@ -1,8 +1,15 @@
-import { genericFn, printObjet } from "./generics/generics";
+import { genericFn, genericFnArrow, printObjet } from "./generics/generics";
 
-printObjet(123);
-printObjet(new Date());
+// printObjet(123);
+// printObjet(new Date());
 
+const name: string = "Ruben";
 console.log(genericFn(123));
-console.log(genericFn("hola mundo").toFixed(2)); //NOTE error: Type '"hola mundo"' is not assignable to type 'number'.
-console.log(genericFn(new Date()).toFixed(2)); //NOTE error: Type 'Date' is not assignable to type 'number'.
+// console.log(genericFn(name).toFixed(2)); //NOTE toFixed(2) is a method of string
+// console.log(genericFn(new Date()).toFixed(2)); //NOTE toFixed(2) is a method of Date
+console.log(genericFn(name).toUpperCase());
+console.log(genericFn(new Date()).getDate());
+
+console.log(genericFnArrow(1111));
+console.log(genericFnArrow(name).toUpperCase());
+console.log(genericFnArrow(new Date()).getDate());
