@@ -8,6 +8,14 @@ const printToConsoleConditional = (print: boolean = false): Function => {
 	else return () => {}; //NOTE aqui le pasamos una funcion vacia
 };
 
+//NOTE previene de que algien haga una expancion de propiedades o metodos en una clase
+const bloquearPrototipo = function (constructor: Function) {
+	Object.seal(constructor);
+	Object.seal(constructor.prototype);
+};
+
+//NOTE ejecuta en orden secuencial
+@bloquearPrototipo
 @printToConsoleConditional(true)
 export class Pokemon {
 	public api: string = "https://pokemonapi.co";
